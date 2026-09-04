@@ -1,9 +1,9 @@
-const CACHE='kaze-storez-v2';
+const CACHE='kaze-storez-v3';
 const APP_SHELL=[
  './','./index.html','./shop.html','./product.html','./cart.html','./checkout.html',
  './wishlist.html','./about.html','./contact.html','./shipping.html','./returns.html',
  './privacy.html','./terms.html','./faq.html','./success.html','./admin.html',
- './style.css','./app.js','./manifest.webmanifest','./offline.html',
+ './style.css','./app.js','./manifest.webmanifest','./offline.html','./app.html',
  './assets/icons/icon-192.png','./assets/icons/icon-512.png'
 ];
 self.addEventListener('install',e=>e.waitUntil(caches.open(CACHE).then(c=>c.addAll(APP_SHELL)).then(()=>self.skipWaiting())));
